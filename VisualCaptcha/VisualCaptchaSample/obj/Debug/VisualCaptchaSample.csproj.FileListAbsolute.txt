@@ -1,0 +1,12 @@
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\VisualCaptchaSample.dll.config
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\VisualCaptchaSample.dll
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\VisualCaptchaSample.pdb
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\obj\Debug\VisualCaptchaSample.csprojResolveAssemblyReference.cache
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\obj\Debug\VisualCaptchaSample.dll
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\obj\Debug\VisualCaptchaSample.pdb
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\VisualCaptcha.dll
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\System.Collections.Immutable.dll
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\VisualCaptcha.pdb
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\System.Collections.Immutable.xml
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\Newtonsoft.Json.dll
+E:\DoProject\Web\Captcha\VisualCaptcha\VisualCaptchaSample\bin\Newtonsoft.Json.xml

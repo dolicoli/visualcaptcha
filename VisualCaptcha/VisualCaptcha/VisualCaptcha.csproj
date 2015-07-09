@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{785BBF88-5123-459B-8EFB-75D876A120E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualCaptcha</RootNamespace>
+    <AssemblyName>VisualCaptcha</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\Microsoft.Bcl.Immutable.1.0.34\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets.cs" />
+    <Compile Include="CryptoHelper.cs" />
+    <Compile Include="FrontEndData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Captcha.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\audios\12times2.mp3" />
+    <EmbeddedResource Include="Assets\audios\2times10.mp3" />
+    <EmbeddedResource Include="Assets\audios\4plus1.mp3" />
+    <EmbeddedResource Include="Assets\audios\4plus3.mp3" />
+    <EmbeddedResource Include="Assets\audios\5plus1.mp3" />
+    <EmbeddedResource Include="Assets\audios\5times2.mp3" />
+    <EmbeddedResource Include="Assets\audios\6plus6.mp3" />
+    <EmbeddedResource Include="Assets\audios\99plus1.mp3" />
+    <EmbeddedResource Include="Assets\audios\add3to1.mp3" />
+    <EmbeddedResource Include="Assets\audios\addblueandyellow.mp3" />
+    <EmbeddedResource Include="Assets\audios\after2.mp3" />
+    <EmbeddedResource Include="Assets\audios\capitaloffrance.mp3" />
+    <EmbeddedResource Include="Assets\audios\divide4by2.mp3" />
+    <EmbeddedResource Include="Assets\audios\firstletteralphabet.mp3" />
+    <EmbeddedResource Include="Assets\audios\milkcolor.mp3" />
+    <EmbeddedResource Include="Assets\audios\skycolor.mp3" />
+    <EmbeddedResource Include="Assets\audios\skynight.mp3" />
+    <EmbeddedResource Include="Assets\audios\sunastar.mp3" />
+    <EmbeddedResource Include="Assets\audios\thirdmonth.mp3" />
+    <EmbeddedResource Include="Assets\audios\yourobot.mp3" />
+    <EmbeddedResource Include="Assets\images\airplane2x.png" />
+    <EmbeddedResource Include="Assets\images\airplane.png" />
+    <EmbeddedResource Include="Assets\images\balloons2x.png" />
+    <EmbeddedResource Include="Assets\images\balloons.png" />
+    <EmbeddedResource Include="Assets\images\camera2x.png" />
+    <EmbeddedResource Include="Assets\images\camera.png" />
+    <EmbeddedResource Include="Assets\images\car2x.png" />
+    <EmbeddedResource Include="Assets\images\car.png" />
+    <EmbeddedResource Include="Assets\images\cat2x.png" />
+    <EmbeddedResource Include="Assets\images\cat.png" />
+    <EmbeddedResource Include="Assets\images\chair2x.png" />
+    <EmbeddedResource Include="Assets\images\chair.png" />
+    <EmbeddedResource Include="Assets\images\clip2x.png" />
+    <EmbeddedResource Include="Assets\images\clip.png" />
+    <EmbeddedResource Include="Assets\images\clock2x.png" />
+    <EmbeddedResource Include="Assets\images\clock.png" />
+    <EmbeddedResource Include="Assets\images\cloud2x.png" />
+    <EmbeddedResource Include="Assets\images\cloud.png" />
+    <EmbeddedResource Include="Assets\images\computer2x.png" />
+    <EmbeddedResource Include="Assets\images\computer.png" />
+    <EmbeddedResource Include="Assets\images\envelope2x.png" />
+    <EmbeddedResource Include="Assets\images\envelope.png" />
+    <EmbeddedResource Include="Assets\images\eye2x.png" />
+    <EmbeddedResource Include="Assets\images\eye.png" />
+    <EmbeddedResource Include="Assets\images\flag2x.png" />
+    <EmbeddedResource Include="Assets\images\flag.png" />
+    <EmbeddedResource Include="Assets\images\folder2x.png" />
+    <EmbeddedResource Include="Assets\images\folder.png" />
+    <EmbeddedResource Include="Assets\images\foot2x.png" />
+    <EmbeddedResource Include="Assets\images\foot.png" />
+    <EmbeddedResource Include="Assets\images\graph2x.png" />
+    <EmbeddedResource Include="Assets\images\graph.png" />
+    <EmbeddedResource Include="Assets\images\house2x.png" />
+    <EmbeddedResource Include="Assets\images\house.png" />
+    <EmbeddedResource Include="Assets\images\key2x.png" />
+    <EmbeddedResource Include="Assets\images\key.png" />
+    <EmbeddedResource Include="Assets\images\leaf2x.png" />
+    <EmbeddedResource Include="Assets\images\leaf.png" />
+    <EmbeddedResource Include="Assets\images\light-bulb2x.png" />
+    <EmbeddedResource Include="Assets\images\light-bulb.png" />
+    <EmbeddedResource Include="Assets\images\lock2x.png" />
+    <EmbeddedResource Include="Assets\images\lock.png" />
+    <EmbeddedResource Include="Assets\images\magnifying-glass2x.png" />
+    <EmbeddedResource Include="Assets\images\magnifying-glass.png" />
+    <EmbeddedResource Include="Assets\images\man2x.png" />
+    <EmbeddedResource Include="Assets\images\man.png" />
+    <EmbeddedResource Include="Assets\images\music-note2x.png" />
+    <EmbeddedResource Include="Assets\images\music-note.png" />
+    <EmbeddedResource Include="Assets\images\pants2x.png" />
+    <EmbeddedResource Include="Assets\images\pants.png" />
+    <EmbeddedResource Include="Assets\images\pencil2x.png" />
+    <EmbeddedResource Include="Assets\images\pencil.png" />
+    <EmbeddedResource Include="Assets\images\printer2x.png" />
+    <EmbeddedResource Include="Assets\images\printer.png" />
+    <EmbeddedResource Include="Assets\images\robot2x.png" />
+    <EmbeddedResource Include="Assets\images\robot.png" />
+    <EmbeddedResource Include="Assets\images\scissors2x.png" />
+    <EmbeddedResource Include="Assets\images\scissors.png" />
+    <EmbeddedResource Include="Assets\images\sunglasses2x.png" />
+    <EmbeddedResource Include="Assets\images\sunglasses.png" />
+    <EmbeddedResource Include="Assets\images\t-shirt2x.png" />
+    <EmbeddedResource Include="Assets\images\t-shirt.png" />
+    <EmbeddedResource Include="Assets\images\tag2x.png" />
+    <EmbeddedResource Include="Assets\images\tag.png" />
+    <EmbeddedResource Include="Assets\images\tree2x.png" />
+    <EmbeddedResource Include="Assets\images\tree.png" />
+    <EmbeddedResource Include="Assets\images\truck2x.png" />
+    <EmbeddedResource Include="Assets\images\truck.png" />
+    <EmbeddedResource Include="Assets\images\umbrella2x.png" />
+    <EmbeddedResource Include="Assets\images\umbrella.png" />
+    <EmbeddedResource Include="Assets\images\woman2x.png" />
+    <EmbeddedResource Include="Assets\images\woman.png" />
+    <EmbeddedResource Include="Assets\images\world2x.png" />
+    <EmbeddedResource Include="Assets\images\world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\audios\12times2.ogg" />
+    <EmbeddedResource Include="Assets\audios\2times10.ogg" />
+    <EmbeddedResource Include="Assets\audios\4plus1.ogg" />
+    <EmbeddedResource Include="Assets\audios\4plus3.ogg" />
+    <EmbeddedResource Include="Assets\audios\5plus1.ogg" />
+    <EmbeddedResource Include="Assets\audios\5times2.ogg" />
+    <EmbeddedResource Include="Assets\audios\6plus6.ogg" />
+    <EmbeddedResource Include="Assets\audios\99plus1.ogg" />
+    <EmbeddedResource Include="Assets\audios\add3to1.ogg" />
+    <EmbeddedResource Include="Assets\audios\addblueandyellow.ogg" />
+    <EmbeddedResource Include="Assets\audios\after2.ogg" />
+    <EmbeddedResource Include="Assets\audios\capitaloffrance.ogg" />
+    <EmbeddedResource Include="Assets\audios\divide4by2.ogg" />
+    <EmbeddedResource Include="Assets\audios\firstletteralphabet.ogg" />
+    <EmbeddedResource Include="Assets\audios\milkcolor.ogg" />
+    <EmbeddedResource Include="Assets\audios\skycolor.ogg" />
+    <EmbeddedResource Include="Assets\audios\skynight.ogg" />
+    <EmbeddedResource Include="Assets\audios\sunastar.ogg" />
+    <EmbeddedResource Include="Assets\audios\thirdmonth.ogg" />
+    <EmbeddedResource Include="Assets\audios\yourobot.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
